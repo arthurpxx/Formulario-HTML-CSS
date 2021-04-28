@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de DEV's</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="box">
+            <div class="box1">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Ex.: Arthur" required>
+            </div>
+
+            <div class="box1">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex.: Porto" required>
+            </div>
+        </fieldset>
+
+        <div class="box1">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" placeholder="Ex.: exemplo@..." required>
+        </div>
+
+        <div class="box1">
+            <label><strong>Em qual aplicação você desenvolve?</strong></label>
+
+            <label>
+                <input type="radio" name="web" value="frontend"> Front-end
+            </label>
+
+            <label>
+                <input type="radio" name="web" value="backend"> Back-end
+            </label>
+
+            <label>
+                <input type="radio" name="web" value="fullstack"> Fullstack
+            </label>
+        </div>
+
+        <div class="box1">
+            <label for="serionidade"><strong>Sua senioridade</strong></label>
+            <select id="serionidade">
+                <option selected disabled>Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="box">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que usa:</strong></label><br><br>
+                <input type="checkbox" id="tec1" name="tec1">
+                <label for="tec1">HTML</label>
+                <input type="checkbox" id="tec2" name="tec2">
+                <label for="tec2">CSS</label>
+                <input type="checkbox" id="tec3" name="tec3">
+                <label for="tec3">PHP</label>
+                <input type="checkbox" id="tec4" name="tec4">
+                <label for="tec4">JavaScript</label>
+                <input type="checkbox" id="tec5" name="tec5">
+                <label for="tec5">Python</label>
+                <input type="checkbox" id="tec6" name="tec6">
+                <label for="tec6">Java</label>
+                <input type="checkbox" id="tec7" name="tec7">
+                <label for="tec7">Ruby</label>
+            </div><br>
+        </fieldset>
+
+        <div class="box1">
+            <label><strong>Conte sobre sua experiência</strong></label>
+            <textarea name="experiencia" id="experiencia" rows="5" style="width: 26em;" placeholder="Sua experiência"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Concluido</button>
+    </form>
+</body>
+
+</html>
